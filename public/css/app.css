@@ -1,1 +1,6 @@
-
+body {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+  font-weight: 600;
+}
