@@ -9,6 +9,11 @@ const expressLayout = require('express-ejs-layouts')
 
 const PORT = process.env.PORT || 3000;  // ES6 syntax for if-else.
 
+
+//Assets 
+app.use(express.static('public'))
+
+
 app.get('/' , (req, res) =>{
     // res.send('Server Started')
     res.render('home')
