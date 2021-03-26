@@ -5,8 +5,12 @@ body {
   font-weight: 600;
 }
 
-.logo_img {
+.ml_100 {
   margin-left: 100px !important;
+}
+
+.mr_100 {
+  margin-right: 100px !important;
 }
 
 .menu_links {
@@ -25,4 +29,12 @@ nav li a {
 }
 nav li a:hover {
   color: #fe5f1e;
+}
+
+section.header {
+  background: #f8f8f8;
+}
+
+.header_img {
+  width: 600px !important;
 }
