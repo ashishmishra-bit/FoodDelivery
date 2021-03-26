@@ -4,3 +4,25 @@ body {
   color: #232323;
   font-weight: 600;
 }
+
+.logo_img {
+  margin-left: 100px !important;
+}
+
+.menu_links {
+  margin-right: 100px !important;
+}
+
+nav li:last-child a {
+  background: #fe5f1e;
+}
+nav li:last-child a:hover {
+  background: black;
+}
+
+nav li a {
+  transition: all 0.3s ease-in-out;
+}
+nav li a:hover {
+  color: #fe5f1e;
+}

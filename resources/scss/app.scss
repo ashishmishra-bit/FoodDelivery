@@ -6,3 +6,21 @@ body{
     color : $dark;
     font-weight: 600;
 }
+.logo_img{
+    margin-left: 100px !important;
+} 
+.menu_links{
+    margin-right:100px !important;
+}
+nav li:last-child a {
+    background: $primary;
+    &:hover{
+        background:$primary-hover;
+    }
+}
+nav li a{
+    transition: $smooth;
+    &:hover{
+        color:$primary
+    }
+}
