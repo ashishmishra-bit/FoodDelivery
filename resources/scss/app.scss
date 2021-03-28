@@ -5,7 +5,7 @@ body{
     -webkit-font-smoothing: antialiased;
     color : $dark;
     font-weight: 600;
-	height: 4000px;
+	
 }
 .ml_100{
     margin-left: 100px !important;
@@ -94,6 +94,9 @@ section.header{
 	border-radius: 20px;
 	// box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.row-gap{
+	grid-row-gap: 50px;
 }
 
 .glow-on-hover {
