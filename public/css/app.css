@@ -293,7 +293,7 @@ footer {
 .right form input, .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: #fe5f1e;
+  background: #ccc;
   padding-left: 10px;
   border-radius: 20px;
 }
