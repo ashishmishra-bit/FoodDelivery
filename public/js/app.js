@@ -11,6 +11,15 @@
 //     var nav = document.querySelector("nav");
 //     nav.classList.toggle("sticky" , window.scrollY > 0);
 // })
+var signUpButton = document.getElementById('signUp');
+var signInButton = document.getElementById('signIn');
+var container = document.getElementById('container-login');
+signInButton.addEventListener('click', function () {
+  container.classList.remove("right-panel-active");
+});
+signUpButton.addEventListener('click', function () {
+  container.classList.add("right-panel-active");
+});
 
 /***/ }),
 
