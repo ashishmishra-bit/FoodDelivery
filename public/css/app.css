@@ -363,3 +363,6 @@ footer {
     margin: 5px 0;
   }
 }
+section.cart {
+  background: #f8f8f8;
+}
