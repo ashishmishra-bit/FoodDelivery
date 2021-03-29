@@ -68,7 +68,7 @@ section.header {
   height: 70px;
   width: 200px;
   margin-top: 20px !important;
-  border-radius: 20px;
+  border-radius: 100px;
   border: none;
   transition-duration: 0.5s;
   transform: rotateX(45deg);
@@ -377,7 +377,7 @@ section.cart .amount {
   height: 70px;
   width: 200px;
   margin-top: 20px !important;
-  border-radius: 20px;
+  border-radius: 100px;
   border: none;
   transition-duration: 0.5s;
   transform: rotateX(45deg);
