@@ -366,3 +366,6 @@ footer {
 section.cart {
   background: #f8f8f8;
 }
+section.cart .amount {
+  color: #fe5f1e;
+}
