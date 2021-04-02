@@ -9,6 +9,21 @@ const expressLayout = require('express-ejs-layouts')
 
 const PORT = process.env.PORT || 3000;  // ES6 syntax for if-else.
 
+const mongoose = require('mongoose')
+
+// DB Connection
+
+
+const url = 'mongodb://localhost/food-delivery';
+mongoose.connect(url, {useNewUrlParser: true, useCreateIndex: true , useUnifiedTopology: true, userFindAndModify: true});
+const connection = mongoose.connection;
+connection.once('open' , () =>{
+    console.log('Database connected...');
+}).catch(err => {
+    console.log('Connection Failed...');
+});``
+
+
 
 //Assets 
 app.use(express.static('public'))
