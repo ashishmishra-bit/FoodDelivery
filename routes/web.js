@@ -1,9 +1,10 @@
-function initRoutes (app){
-    app.get('/' , (req, res) =>{        
-        res.render('home')
-        
-    })
+const homeController = require('../app/http/controllers/homeController')
 
+function initRoutes (app){
+
+    homeController().index
+    app.get('/' ,  homeController().index) 
+    
     app.get('/cart' , (req, res) =>{
         res.render('coustomers/cart')
     })
