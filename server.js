@@ -13,7 +13,6 @@ const mongoose = require('mongoose')
 
 // DB Connection
 
-
 const url = 'mongodb://localhost/food-delivery';
 mongoose.connect(url, {useNewUrlParser: true, useCreateIndex: true , useUnifiedTopology: true, userFindAndModify: true});
 const connection = mongoose.connection;
@@ -21,7 +20,7 @@ connection.once('open' , () =>{
     console.log('Database connected...');
 }).catch(err => {
     console.log('Connection Failed...');
-});``
+});
 
 
 
