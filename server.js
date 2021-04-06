@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 
 const app = express();
@@ -9,7 +11,11 @@ const expressLayout = require('express-ejs-layouts')
 
 const PORT = process.env.PORT || 3000;  // ES6 syntax for if-else.
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+
+const session = require('express-session');
+
+const flash = require('express-flash');
 
 // DB Connection
 
@@ -23,6 +29,17 @@ connection.once('open' , () =>{
 });
 
 
+//Session Config
+
+app.use(session({
+    secret : process.env.COOKIE_SECRET,
+    resave : false,
+    saveUninitialized : false,
+    // store: mongoStrore,
+    cookie:  { maxAge : 1000 * 60 * 60 * 24 }
+}))
+
+app.use(flash())
 
 //Assets 
 app.use(express.static('public'))
