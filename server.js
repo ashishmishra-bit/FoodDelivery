@@ -14,8 +14,11 @@ const PORT = process.env.PORT || 3000;  // ES6 syntax for if-else.
 const mongoose = require('mongoose');
 
 const session = require('express-session');
+const MongoStore = require('connect-mongo');
 
 const flash = require('express-flash');
+
+// const MongoStore = require('connect-mongo')(session);
 
 // DB Connection
 
@@ -29,13 +32,20 @@ connection.once('open' , () =>{
 });
 
 
+// let mongostore = new MongoStore({
+//     mongooseConnection : connection,
+//     collection : 'sessions'
+// })
+
 //Session Config
 
 app.use(session({
     secret : process.env.COOKIE_SECRET,
     resave : false,
     saveUninitialized : false,
-    // store: mongoStrore,
+    store: MongoStore.create({
+        mongoUrl:url,
+    }),
     cookie:  { maxAge : 1000 * 60 * 60 * 24 }
 }))
 
